@@ -1,2 +1,64 @@
+<a href="#"><img src="https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white"></img></a>
+  <a href="#"><img src="https://img.shields.io/github/stars/chengwei0427/testICP"></img></a>
+  <a href="#"><img src="https://img.shields.io/github/forks/chengwei0427/testICP"></img></a>
+  <a href="#"><img src="https://img.shields.io/github/repo-size/chengwei0427/testICP"></img></a>
+  <a href="https://github.com/chengwei0427/testICP/issues"><img src="https://img.shields.io/github/issues/chengwei0427/testICP"></img></a>
+  <a href="https://github.com/chengwei0427/testICP/graphs/contributors"><img src="https://img.shields.io/github/contributors/chengwei0427/testICP?color=blue"></img></a>
+
 # testICP
-A variety of ICP algorithm implementation, can be used to do comparative testing
+A variety of ICP algorithm implementation, can be used to do comparative testing; Including **ICP, ICP_GN,ICP_SVD,ICP_CERES,ICP_G2O,NDT,SICP,NDT_CPU**;
+
+## Example results 
+<p align='center'>
+    <img src="./pic/before.png" alt="drawing" width="400"/>
+    <img src="./pic/after.png" alt="drawing" width="400"/>
+</p>
+
+<p align='center'>
+    <img src="./pic/output.png" alt="drawing" width="800"/>
+</p>
+
+## Dependency
+
+-[Eigen]
+
+-[BOOST]
+
+-[PCL]
+
+-[OPENCV]
+
+-[G2o]
+
+-[Ceres]
+
+
+## Install
+
+Use the following commands to download and compile the package.
+
+```
+cd ~/${yourdir}
+git clone https://github.com/chengwei0427/testICP.git
+cd ./testICP/build
+cmake ..
+make
+```
+
+## Other notes
+
+1. you should change the cmakelist, find the right dependencies; **I think you can finish the work yourself**
+
+2.you could change the **config/config.yaml** to test different ICP method;
+
+## Run the package
+
+```
+cd ./bin/
+./test_optimize_icp
+```
+
+
+## Acknowledgements
+
+Thanks shenlan;
