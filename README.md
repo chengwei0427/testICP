@@ -18,6 +18,10 @@ A variety of ICP algorithm implementation, can be used to do comparative testing
     <img src="./pic/output.png" alt="drawing" width="800"/>
 </p>
 
+-[bilibili-video](https://www.bilibili.com/video/BV1Rg411d7zU?spm_id_from=333.999.0.0)
+
+-[csdn](https://blog.csdn.net/u012700322/article/details/124802086?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22124802086%22%2C%22source%22%3A%22u012700322%22%7D&ctrtid=lFfjN)
+
 ## Dependency
 
 -[Eigen]
