@@ -62,7 +62,11 @@ cd ./bin/
 ./test_optimize_icp
 ```
 
+## TODO
+
+  - [ ] [Add gicp,vgicp](https://travis-ci.org/SMRT-AIST/fast_gicp)
+  - [ ] [Add Comparison]
 
 ## Acknowledgements
 
-Thanks shenlan;
+Thanks shenlan,floam.
