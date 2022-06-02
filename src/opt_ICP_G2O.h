@@ -56,7 +56,8 @@ namespace TESTICP
         {
             Eigen::Matrix<double, 6, 1> delta_r;
             delta_r << update[0], update[1], update[2], update[3], update[4], update[5];
-            _estimate = Sophus::SE3d::exp(delta_r) * _estimate;
+            // _estimate = Sophus::SE3d::exp(delta_r) * _estimate;  //  左乘
+            _estimate = _estimate * Sophus::SE3d::exp(delta_r);
         }
         virtual bool read(std::istream &in) {}
         virtual bool write(std::ostream &out) const {}
