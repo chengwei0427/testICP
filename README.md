@@ -8,6 +8,9 @@
 # testICP
 A variety of ICP algorithm implementation, can be used to do comparative testing; Including **ICP, ICP_GN,ICP_SVD,ICP_CERES,ICP_G2O,NDT,SICP,NDT_CPU**;
 
+## Something may not right
+[GN,ceres and g2o  left/right perturbation update need further examination]
+
 ## Example results 
 <p align='center'>
     <img src="./pic/before.png" alt="drawing" width="400"/>
