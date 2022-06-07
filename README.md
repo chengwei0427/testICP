@@ -67,9 +67,9 @@ cd ./bin/
 
 ## TODO
 
+  - [x] [add floam use g2o instead of ceres](https://github.com/chengwei0427/floam_g2o)
   - [ ] [Add gicp,vgicp](https://travis-ci.org/SMRT-AIST/fast_gicp)
   - [ ] [Add Comparison]
-  - [ ] [add floam use g2o instead of ceres](https://zhuanlan.zhihu.com/p/509608070)
 
 
 ## Acknowledgements
