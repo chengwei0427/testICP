@@ -4,6 +4,9 @@ project(testicp)
 
 set(CMAKE_CXX_STANDARD 14)
 
+##################################
+#          find package
+##################################
 find_package(PCL REQUIRED)
 include_directories(${PCL_INCLUDE_DIRS})
 
@@ -27,7 +30,9 @@ include_directories(${PROJECT_SOURCE_DIR}/src)
 set(THIRD_PARTY 
 ${PCL_LIBRARIES} ${OpenCV_LIBRARIES} ${YAML_CPP_LIBRARIES} ${Boost_LIBRARIES} pthread g2o_core ${CERES_LIBRARIES}
 )
-
+##################################
+#            link part
+##################################
 add_library(UTILS SHARED 
 ${PROJECT_SOURCE_DIR}/src/icp_registration.cpp
 ${PROJECT_SOURCE_DIR}/src/icp_svd_registration.cpp
@@ -50,4 +55,3 @@ target_link_libraries(UTILS ${THIRD_PARTY})
 
 add_executable(icp ${PROJECT_SOURCE_DIR}/app/test_optimize_icp_node.cpp)
 target_link_libraries(icp UTILS)
-
